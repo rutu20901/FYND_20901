@@ -1,0 +1,33 @@
+Explain the node js architecture with the internal work of event loop ?
+ 
+ 1. Node js is a function programming language
+ 2. Asynchronous event
+ 3. Architecture is controlled by the main thread
+ 4. main thread is maintain the flow.
+ 5. main threads are the threads which is controlled all the nodes.
+ 6. it include
+    - Application
+    - V8 
+    - Node JS binding
+    - Event Queue
+    - Worker thread
+    - Blocking operation
+    - Execute callback
+
+  V8 
+   - Javascript engine
+   
+  Event loop
+   - It is equilent to event loop which is follows FIFO(First In First Out) data structure.
+   - advantage: it has a capacity to execute multiple nodeJs instanaces at the same time.
+
+  Event Queue
+   - It is internal data structure
+   - Execution program
+   - Event: action performed on that object
+            In that we know what are going to do.
+   - Queue: Follows FIFO
+
+  Worker Thread
+   - Thread is a smallest process of an Application
+   - eg. addition, substraction and any kind of mathematical operation.
