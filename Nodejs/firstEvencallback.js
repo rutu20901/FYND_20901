@@ -8,6 +8,7 @@ function readFirstFiveCallback(error, fileData) {
     Lines.slice(0,5).forEach((Line)=> {
         console.log(Line);
     });
+    
 
     fs.readFile("./static/files/tenEvenNumbers", readFirstFiveCallback);
     

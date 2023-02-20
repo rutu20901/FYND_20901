@@ -7,6 +7,7 @@ arr.forEach(element=>{
 
 });
 
+
 arr2.forEach(element=>{
     console.log(element);
 });
