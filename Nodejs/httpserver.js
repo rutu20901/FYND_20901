@@ -1,10 +1,12 @@
-//const express = require("express");
-//const app = express();
+const express = require('express');
+const app = express();
+const dt = require('./ownModule.js');
 
-const http = require("http");
-http.createServer(function (req,res) { //callback function
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write("hello world");
+app.get('/', (req, res) => {
+  res.status(200).send("The date and time are: " + dt.getCurrentDate());;
 
-    res.end();
-}).listen(8080);
+});
+
+app.listen(8800, () => {
+  console.log('Server started on port 8800');
+});
