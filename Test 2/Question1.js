@@ -28,9 +28,6 @@ function one(){
 one();
 
 
-
-
-
 //the FilesStream module to read contents of a text file
 const fs = require("fs");
 
