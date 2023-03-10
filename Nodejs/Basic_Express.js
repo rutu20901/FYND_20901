@@ -6,6 +6,7 @@ app.get("/",(req,res) => {
     res.send("route at root");
 });
 
+
 app.get("/hello",(req,res) =>{
     res.send("route at hello");
 });
