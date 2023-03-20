@@ -1,0 +1,31 @@
+MVVM Arcitecture:
+- In MVVM, the mediator is the view model
+- In MVVM , the view has reference to the viewmodel
+- communication is two- way using data-binding
+
+
+Model -- View Model -- View
+
+Model : 
+    - Model represents the app domain model which can include data model as well as bussiness and validation logic
+    - It communicates with the view model.
+
+View :
+    - It is user interface of the application.
+    - It communicates with the view model through data binding
+
+View model :
+    - The view Model is link between the view and model or we can say that is is bridge between the view and model
+    - It implements public properties and commands that the view uses by way of data binding.
+
+Working of MVVM architecture 
+- In MVVM architecture , their are three key components which rare interact to each other.
+- Since the view only communicates with the viewmodel and the viewmodel only communicates with the model
+- All user interactions  occurs within the View, which is in charge of detecting the user’s input (mouse clicks, keyboard input) and 
+forwarding it to the ViewModel by way of data binding. Data binding can be implemented with callbacks or properties and constitutes the 
+concrete link between the View and the ViewModel. 
+- The ViewModel implements the properties and commands to which the view can be bound. These properties and commands define the 
+functionality that the View can offer to the user, although how to display it is entirely up to the View.
+- he Models are classes that model the application’s domain. Models encapsulate the application’s data and business logic.
+
+
