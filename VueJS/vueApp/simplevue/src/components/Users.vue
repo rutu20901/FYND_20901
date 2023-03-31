@@ -2,7 +2,6 @@
 
 <template>
     <div class="container">
-        <h1>{{ msg }}</h1>
         <h2>Services</h2>
         <div class="con">
 
